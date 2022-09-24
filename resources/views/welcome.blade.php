@@ -58,7 +58,7 @@
                     <h5>De gravure plaatsen wij aan de voorzijde van het sieraad GRATIS</h5>
                     <input type="checkbox" class="checkbox" id="myCheck" onclick="myFunction()">
                     <label for="vehicle1">
-                        <span>Maximum 8 Character's</span>
+                        <span>Minimum 4 Character's</span>
                     </label>
                     <p id="font" style="display:none">
                         <label style="padding-top: 20px;" for="">Enter Name</label>
@@ -80,14 +80,14 @@
 
                     {{-- Second Checkbox --}}
 
-                    <h5>De gravure plaatsen wij aan de voorzijde van het sieraad GRATIS</h5>
+                    <h5>Premium Category With Extra $5,00/</h5>
                     <input type="checkbox" class="checkbox" id="premium" onclick="mypremiumFunction()">
                     <label for="vehicle1">
-                        <span>Maximum 8 Character's</span>
+                        <span>Minimum 4 Character's</span>
                     </label>
                     <hr>
                     <p id="premiumfont" style="display:none">
-                        <label style="padding-top: 20px;" for="">Premium Category With Extra $5,00/Enter Name</label>
+                        <label style="padding-top: 20px;" for="">Enter Name</label>
                         <textarea class="form-control" oninput="showname()" id="premiumname" cols="2" rows="2"></textarea><br>
                         <label for="">LetterType</label>
                         <select class="form-control" name="premiumfont-names" id="premiumfont-names"
@@ -102,7 +102,7 @@
                     </p>
                     <div id="premiuminfo"></div>
                     
-
+                     <h5 style="position: absolute;">Price</h5>
                     <p style="margin-left: 350px; margin-top:25px;">$149,95</p>
 
                 </div>
@@ -160,6 +160,19 @@
                 text.style.display = "none";
             }
 
+        }
+    </script>
+
+    <script>
+        function showname() {
+            let name = document.getElementById('premiumname').value
+            document.getElementById('premiuminfo').innerHTML = name
+        }
+    </script>
+
+    <script type="text/javascript">
+        function changepremiumFont(name) {
+            document.body.style.fontFamily = name;
         }
     </script>
 
