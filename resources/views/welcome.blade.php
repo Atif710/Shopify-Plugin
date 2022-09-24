@@ -87,7 +87,7 @@
                     </label>
                     <hr>
                     <p id="premiumfont" style="display:none">
-                        <label style="padding-top: 20px;" for="">Enter Name</label>
+                        <label style="padding-top: 20px;" for="">Premium Category With Extra $5,00/Enter Name</label>
                         <textarea class="form-control" oninput="showname()" id="premiumname" cols="2" rows="2"></textarea><br>
                         <label for="">LetterType</label>
                         <select class="form-control" name="premiumfont-names" id="premiumfont-names"
