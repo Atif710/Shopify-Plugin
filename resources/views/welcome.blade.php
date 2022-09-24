@@ -88,7 +88,7 @@
                     <hr>
                     <p id="premiumfont" style="display:none">
                         <label style="padding-top: 20px;" for="">Enter Name</label>
-                        <textarea class="form-control" oninput="showname()" id="premiumname" cols="2" rows="2"></textarea><br>
+                        <textarea class="form-control" oninput="add()" oninput="showname()" id="premiumname" cols="2" rows="2"></textarea><br>
                         <label for="">LetterType</label>
                         <select class="form-control" name="premiumfont-names" id="premiumfont-names"
                             onchange="changepremiumFont(this.value);">
@@ -101,9 +101,10 @@
                         </select>
                     </p>
                     <div id="premiuminfo"></div>
+                    <input type="hidden" id="price">
                     
                      <h5 style="position: absolute;">Price</h5>
-                    <p style="margin-left: 350px; margin-top:25px;">$149,95</p>
+                    <p style="margin-left: 350px; margin-top:25px;">$149</p>
 
                 </div>
                 <div class="modal-footer">
@@ -173,6 +174,15 @@
     <script type="text/javascript">
         function changepremiumFont(name) {
             document.body.style.fontFamily = name;
+        }
+    </script>
+
+    <script>
+        function add(name){
+            let a = 149;
+            let b = 500;
+            let c = a + b;
+            document.getElementById("price").innerHTML= c;
         }
     </script>
 
